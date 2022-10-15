@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 /**
  * Purpose - To add multiple contacts an Address Book System
- * @author ASHISH SAHU
  *
  */
 public class AddressBookSystem {

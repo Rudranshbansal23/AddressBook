@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import org.json.simple.JsonObject;
+
 import com.opencsv.CSVWriter;
 
 public class FileIO {
@@ -74,5 +76,24 @@ public class FileIO {
 		}
 		fileWriter.close();
 		return true;
+	}
+
+}
+
+	public static void writeJsonFile(ArrayList<Contact> addressBook, String addressBookName) throws IOException {
+		File file = new File(FILE_PATH + "json//" + addressBookName + ".json");
+		boolean isCreated = file.createNewFile();
+		if (!isCreated) {
+			file.delete();
+			file.createNewFile();
+		}
+		FileWriter writer = new FileWriter(file);
+		JsonObject gson = new JsonObject();
+		String data = "";
+		for (Contact person : addressBook) {
+			data = data.concat(gson.toJson(person) + "\n");
+		}
+		writer.write(data);
+		writer.close();
 	}
 }

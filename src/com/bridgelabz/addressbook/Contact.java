@@ -80,5 +80,5 @@ public class Contact {
 				+ ", address=" + address + ", city=" + city + ", state=" + state + ", zip=" + zip + ", email=" + email
 				+ "]";
 	}
-
+	
 }

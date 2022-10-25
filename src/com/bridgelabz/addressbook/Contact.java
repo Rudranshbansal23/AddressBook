@@ -1,6 +1,6 @@
 package com.bridgelabz.addressbook;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Contact {
 	Scanner sc = new Scanner(System.in);

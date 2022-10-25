@@ -4,111 +4,121 @@ import java.time.LocalDate;
 
 public class Contacts {
 	private String firstName;
-	private String lastName;
-	private String address;
-	private String city;
-	private String state;
-	private int zip;
-	private String phoneNumber;
-	private String emailId;
-	private String contactType;
-	private LocalDate dateAdded;
-	private String BookName;
+    private String lastName;
+    private String address;
+    private String city;
+    private String state;
+    private int zip;
+    private String phoneNumber;
+    private String emailId;
+    private String contactType;
+    private LocalDate dateAdded;
+    private String BookName;
 
-	public String getFirstName() {
-		return firstName;
-	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public String getLastName() {
-		return lastName;
-	}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
+    public String getLastName() {
+        return lastName;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+    public String getAddress() {
+        return address;
+    }
 
-	public String getCity() {
-		return city;
-	}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public String getState() {
-		return state;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	public void setState(String state) {
-		this.state = state;
-	}
+    public String getState() {
+        return state;
+    }
 
-	public int getZip() {
-		return zip;
-	}
+    public void setState(String state) {
+        this.state = state;
+    }
 
-	public void setZip(int zip) {
-		this.zip = zip;
-	}
+    public int getZip() {
+        return zip;
+    }
 
-	public String getPhoneNumber() {
-		return phoneNumber;
-	}
+    public void setZip(int zip) {
+        this.zip = zip;
+    }
 
-	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
 
-	public String getEmailId() {
-		return emailId;
-	}
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
+    public String getEmailId() {
+        return emailId;
+    }
 
-	public String getContactType() {
-		return contactType;
-	}
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
 
-	public void setContactType(String contactType) {
-		this.contactType = contactType;
-	}
+    public String getContactType() {
+        return contactType;
+    }
 
-	public LocalDate getDateAdded() {
-		return dateAdded;
-	}
+    public void setContactType(String contactType) {
+        this.contactType = contactType;
+    }
 
-	public void setDateAdded(LocalDate dateAdded) {
-		this.dateAdded = dateAdded;
-	}
+    public LocalDate getDateAdded() {
+        return dateAdded;
+    }
 
-	public String getBookName() {
-		return BookName;
-	}
+    public void setDateAdded(LocalDate dateAdded) {
+        this.dateAdded = dateAdded;
+    }
 
-	public void setBookName(String bookName) {
-		BookName = bookName;
-	}
+    public String getBookName() {
+        return BookName;
+    }
 
-	@Override
-	public String toString() {
-		return "Contacts{" + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", address='"
-				+ address + '\'' + ", city='" + city + '\'' + ", state='" + state + '\'' + ", zip=" + zip
-				+ ", phoneNumber=" + phoneNumber + ", emailId='" + emailId + '\'' + ", contactType='" + contactType
-				+ '\'' + ", dateAdded=" + dateAdded + ", BookName='" + BookName + '\'' + '}';
-	}
+    public void setBookName(String bookName) {
+        BookName = bookName;
+    }
+
+    @Override
+    public String toString() {
+        return "Contacts{" +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zip=" + zip +
+                ", phoneNumber=" + phoneNumber +
+                ", emailId='" + emailId + '\'' +
+                ", contactType='" + contactType + '\'' +
+                ", dateAdded=" + dateAdded +
+                ", BookName='" + BookName + '\'' +
+                '}';
+    }
 
 }
